@@ -20,6 +20,7 @@ public class ApplicationDbContext : DbContext
     public DbSet<Medicament> Medicaments { get; set; } = null!;
     public DbSet<Prescription> Prescriptions { get; set; } = null!;
     public DbSet<PrescriptionMedicament> PrescriptionMedicaments { get; set; } = null!;
+    public virtual DbSet<User> Users { get; set; }
     
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {
